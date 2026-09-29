@@ -9,6 +9,10 @@
 
     <style>
 
+        /* =========================
+           GLOBAL
+        ========================== */
+
         * {
             margin: 0;
             padding: 0;
@@ -18,10 +22,12 @@
 
         body {
             font-family: "Segoe UI", Arial, sans-serif;
+
             background:
                 radial-gradient(circle at top left, #24104f 0%, transparent 35%),
                 radial-gradient(circle at bottom right, #063b4c 0%, transparent 35%),
                 #080b16;
+
             color: #f5f7ff;
             line-height: 1.6;
         }
@@ -40,7 +46,10 @@
             margin: auto;
         }
 
-        /* NAVBAR */
+
+        /* =========================
+           NAVBAR
+        ========================== */
 
         header {
             position: fixed;
@@ -51,6 +60,7 @@
 
             background: rgba(8, 11, 22, 0.75);
             backdrop-filter: blur(15px);
+
             border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
@@ -90,12 +100,17 @@
             color: #a78bfa;
         }
 
-        /* HERO */
+
+        /* =========================
+           HERO
+        ========================== */
 
         .hero {
             min-height: 100vh;
+
             display: flex;
             align-items: center;
+
             padding-top: 120px;
         }
 
@@ -105,12 +120,15 @@
 
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
+
             align-items: center;
+
             gap: 60px;
         }
 
         .hero small {
             color: #a78bfa;
+
             font-size: 17px;
             font-weight: 600;
         }
@@ -118,57 +136,73 @@
         .hero h1 {
             font-size: clamp(45px, 7vw, 85px);
             line-height: 1;
+
             margin: 15px 0;
         }
 
         .hero h1 span {
             background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero h2 {
             font-size: 27px;
+
             color: #cbd5e1;
+
             margin-bottom: 20px;
         }
 
         .hero p {
             max-width: 650px;
+
             color: #94a3b8;
+
             font-size: 17px;
+
             margin-bottom: 30px;
         }
 
         .hero-buttons {
             display: flex;
             gap: 15px;
+
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
+
             padding: 12px 22px;
+
             border-radius: 10px;
 
             border: 1px solid rgba(255,255,255,0.12);
 
             background: rgba(255,255,255,0.06);
+
             color: white;
 
             cursor: pointer;
+
             font-size: 14px;
+
             transition: 0.3s;
         }
 
         .btn:hover {
             transform: translateY(-3px);
+
             background: rgba(139,92,246,0.2);
+
             border-color: #8b5cf6;
         }
 
         .btn-primary {
             background: linear-gradient(90deg, #7c3aed, #0891b2);
+
             border: none;
         }
 
@@ -176,10 +210,14 @@
             box-shadow: 0 10px 30px rgba(124,58,237,0.3);
         }
 
-        /* HERO GRAPHIC */
+
+        /* =========================
+           HERO GRAPHIC
+        ========================== */
 
         .hero-graphic {
             display: flex;
+
             justify-content: center;
             align-items: center;
         }
@@ -187,6 +225,7 @@
         .circle {
             width: 330px;
             height: 330px;
+
             border-radius: 50%;
 
             background:
@@ -206,15 +245,20 @@
         .circle-inner {
             width: 100%;
             height: 100%;
+
             border-radius: 50%;
+
             background: #0b1020;
 
             display: flex;
+
             justify-content: center;
             align-items: center;
 
             font-size: 70px;
+
             font-weight: 800;
+
             color: white;
         }
 
@@ -230,37 +274,53 @@
 
         }
 
-        /* SECTION TITLE */
+
+        /* =========================
+           SECTION TITLE
+        ========================== */
 
         .section-title {
             text-align: center;
+
             margin-bottom: 55px;
         }
 
         .section-title span {
             color: #8b5cf6;
+
             font-size: 14px;
+
             font-weight: 700;
+
             text-transform: uppercase;
+
             letter-spacing: 2px;
         }
 
         .section-title h2 {
             font-size: 42px;
+
             margin-top: 8px;
         }
 
         .section-title p {
             color: #94a3b8;
+
             max-width: 650px;
+
             margin: 12px auto;
         }
 
-        /* GLASS CARD */
+
+        /* =========================
+           GLASS CARD
+        ========================== */
 
         .glass {
             background: rgba(255,255,255,0.045);
+
             border: 1px solid rgba(255,255,255,0.08);
+
             border-radius: 18px;
 
             backdrop-filter: blur(14px);
@@ -270,17 +330,23 @@
 
         .glass:hover {
             transform: translateY(-6px);
+
             border-color: rgba(139,92,246,0.45);
 
             box-shadow:
                 0 15px 50px rgba(0,0,0,0.25);
         }
 
-        /* ABOUT */
+
+        /* =========================
+           ABOUT
+        ========================== */
 
         .about-grid {
             display: grid;
+
             grid-template-columns: 1fr 1fr;
+
             gap: 30px;
         }
 
@@ -290,6 +356,7 @@
 
         .about-card h3 {
             font-size: 25px;
+
             margin-bottom: 15px;
         }
 
@@ -299,53 +366,70 @@
 
         .skills {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 10px;
+
             margin-top: 25px;
         }
 
         .skill {
             padding: 8px 14px;
+
             border-radius: 20px;
 
             background: rgba(139,92,246,0.1);
+
             border: 1px solid rgba(139,92,246,0.3);
 
             color: #c4b5fd;
+
             font-size: 13px;
         }
 
-        /* EXPERIENCE */
+
+        /* =========================
+           EXPERIENCE
+        ========================== */
 
         .timeline {
             max-width: 850px;
+
             margin: auto;
         }
 
         .experience-card {
             padding: 30px;
+
             margin-bottom: 25px;
         }
 
         .experience-card h3 {
             color: #ffffff;
+
             font-size: 23px;
         }
 
         .experience-card .company {
             color: #a78bfa;
+
             font-weight: 600;
+
             margin: 5px 0;
         }
 
         .experience-card .date {
             color: #64748b;
+
             font-size: 13px;
+
             margin-bottom: 15px;
         }
 
         .experience-card ul {
             padding-left: 20px;
+
             color: #94a3b8;
         }
 
@@ -353,11 +437,16 @@
             margin-bottom: 8px;
         }
 
-        /* PROJECTS */
+
+        /* =========================
+           PROJECTS
+        ========================== */
 
         .projects-grid {
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 25px;
         }
 
@@ -367,40 +456,54 @@
 
         .project-number {
             color: #8b5cf6;
+
             font-size: 14px;
+
             font-weight: bold;
         }
 
         .project-card h3 {
             font-size: 24px;
+
             margin: 12px 0;
         }
 
         .project-card p {
             color: #94a3b8;
+
             margin-bottom: 20px;
         }
 
         .tech {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 8px;
         }
 
         .tech span {
             padding: 6px 10px;
+
             background: rgba(34,211,238,0.08);
+
             color: #67e8f9;
 
             border-radius: 8px;
+
             font-size: 12px;
         }
 
-        /* EDUCATION */
+
+        /* =========================
+           EDUCATION
+        ========================== */
 
         .education-grid {
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 25px;
         }
 
@@ -414,6 +517,7 @@
 
         .education-card h4 {
             color: #a78bfa;
+
             margin: 8px 0;
         }
 
@@ -421,16 +525,22 @@
             color: #94a3b8;
         }
 
-        /* TOOLS */
+
+        /* =========================
+           TOOLS
+        ========================== */
 
         .tools-grid {
             display: grid;
+
             grid-template-columns: repeat(4, 1fr);
+
             gap: 18px;
         }
 
         .tool {
             text-align: center;
+
             padding: 25px 15px;
         }
 
@@ -440,20 +550,28 @@
 
         .tool p {
             color: #64748b;
+
             font-size: 13px;
         }
 
-        /* CERTIFICATES */
+
+        /* =========================
+           CERTIFICATES
+        ========================== */
 
         .certificate-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 25px;
         }
 
         .certificate-card {
             padding: 28px;
+
             display: flex;
+
             flex-direction: column;
         }
 
@@ -462,12 +580,14 @@
             height: 55px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
             border-radius: 15px;
 
             background: rgba(139,92,246,0.12);
+
             color: #a78bfa;
 
             font-size: 25px;
@@ -477,26 +597,34 @@
 
         .certificate-card h3 {
             font-size: 19px;
+
             margin-bottom: 8px;
         }
 
         .certificate-card p {
             color: #94a3b8;
+
             font-size: 14px;
+
             margin-bottom: 20px;
         }
 
         .certificate-card .btn {
             margin-top: auto;
+
             text-align: center;
         }
 
-        /* CERTIFICATE MODAL */
+
+        /* =========================
+           CERTIFICATE MODAL
+        ========================== */
 
         .certificate-modal {
             display: none;
 
             position: fixed;
+
             inset: 0;
 
             z-index: 9999;
@@ -506,6 +634,7 @@
             backdrop-filter: blur(8px);
 
             justify-content: center;
+
             align-items: center;
 
             padding: 30px;
@@ -519,6 +648,7 @@
             position: relative;
 
             max-width: 950px;
+
             max-height: 90vh;
 
             background: #111827;
@@ -535,6 +665,7 @@
             display: block;
 
             max-width: 100%;
+
             max-height: 80vh;
 
             object-fit: contain;
@@ -556,6 +687,7 @@
             border: none;
 
             background: #ef4444;
+
             color: white;
 
             font-size: 22px;
@@ -569,11 +701,16 @@
             background: #dc2626;
         }
 
-        /* CONTACT */
+
+        /* =========================
+           CONTACT
+        ========================== */
 
         .contact-card {
             max-width: 850px;
+
             margin: auto;
+
             padding: 40px;
 
             text-align: center;
@@ -581,34 +718,47 @@
 
         .contact-card h2 {
             font-size: 32px;
+
             margin-bottom: 15px;
         }
 
         .contact-card p {
             color: #94a3b8;
+
             margin-bottom: 25px;
         }
 
         .contact-links {
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
+
             gap: 15px;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+        ========================== */
 
         footer {
             padding: 30px 8%;
+
             text-align: center;
 
             border-top: 1px solid rgba(255,255,255,0.07);
 
             color: #64748b;
+
             font-size: 14px;
         }
 
-        /* MOBILE */
+
+        /* =========================
+           MOBILE
+        ========================== */
 
         @media (max-width: 900px) {
 
@@ -618,11 +768,13 @@
 
             .hero-content {
                 grid-template-columns: 1fr;
+
                 text-align: center;
             }
 
             .hero p {
                 margin-left: auto;
+
                 margin-right: auto;
             }
 
@@ -650,9 +802,12 @@
 
             .circle {
                 width: 250px;
+
                 height: 250px;
             }
+
         }
+
 
         @media (max-width: 600px) {
 
@@ -686,17 +841,22 @@
 
             .close-modal {
                 top: -12px;
+
                 right: -8px;
             }
+
         }
 
     </style>
-
 </head>
+
 
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+========================== -->
 
 <header>
 
@@ -708,13 +868,33 @@
 
         <ul class="nav-links">
 
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#certificates">Certificates</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
 
         </ul>
 
@@ -723,7 +903,9 @@
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================== -->
 
 <section class="hero" id="home">
 
@@ -750,15 +932,21 @@
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn btn-primary">
+                <a
+                    href="#projects"
+                    class="btn btn-primary">
                     View Projects
                 </a>
 
-                <a href="#contact" class="btn">
+                <a
+                    href="#contact"
+                    class="btn">
                     Contact Me
                 </a>
 
-                <a href="#certificates" class="btn">
+                <a
+                    href="#certificates"
+                    class="btn">
                     Certificates
                 </a>
 
@@ -784,7 +972,9 @@
 </section>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================== -->
 
 <section id="about">
 
@@ -806,9 +996,12 @@
 
         <div class="about-grid">
 
+
             <div class="glass about-card">
 
-                <h3>About Me</h3>
+                <h3>
+                    About Me
+                </h3>
 
                 <p>
                     I have completed my B.Tech in Computer Engineering
@@ -829,21 +1022,34 @@
 
             <div class="glass about-card">
 
-                <h3>Technical Skills</h3>
+                <h3>
+                    Technical Skills
+                </h3>
 
                 <div class="skills">
 
                     <span class="skill">C++</span>
+
                     <span class="skill">Python</span>
+
                     <span class="skill">HTML</span>
+
                     <span class="skill">CSS</span>
+
                     <span class="skill">JavaScript</span>
+
                     <span class="skill">React</span>
+
                     <span class="skill">Node.js</span>
+
                     <span class="skill">Express.js</span>
+
                     <span class="skill">MongoDB</span>
+
                     <span class="skill">AI & ML</span>
+
                     <span class="skill">Blockchain</span>
+
                     <span class="skill">Solidity</span>
 
                 </div>
@@ -857,7 +1063,9 @@
 </section>
 
 
-<!-- EXPERIENCE -->
+<!-- =========================
+     EXPERIENCE
+========================== -->
 
 <section id="experience">
 
@@ -877,7 +1085,9 @@
 
             <div class="glass experience-card">
 
-                <h3>Teaching Assistant</h3>
+                <h3>
+                    Teaching Assistant
+                </h3>
 
                 <div class="company">
                     D. Y. Patil Agriculture & Technical University
@@ -916,7 +1126,9 @@
 
             <div class="glass experience-card">
 
-                <h3>Full Stack Web Development Intern</h3>
+                <h3>
+                    Full Stack Web Development Intern
+                </h3>
 
                 <div class="company">
                     InTrAinZ Innovation
@@ -952,7 +1164,9 @@
 
             <div class="glass experience-card">
 
-                <h3>Intern</h3>
+                <h3>
+                    Intern
+                </h3>
 
                 <div class="company">
                     Nano Soft IT Solution
@@ -993,7 +1207,9 @@
 </section>
 
 
-<!-- PROJECTS -->
+<!-- =========================
+     PROJECTS
+========================== -->
 
 <section id="projects">
 
@@ -1010,6 +1226,8 @@
 
         <div class="projects-grid">
 
+
+            <!-- PROJECT 01 -->
 
             <div class="glass project-card">
 
@@ -1030,15 +1248,21 @@
                 <div class="tech">
 
                     <span>Blockchain</span>
+
                     <span>Ethereum</span>
+
                     <span>Solidity</span>
+
                     <span>QR Code</span>
+
                     <span>MetaMask</span>
 
                 </div>
 
             </div>
 
+
+            <!-- PROJECT 02 -->
 
             <div class="glass project-card">
 
@@ -1058,15 +1282,21 @@
                 <div class="tech">
 
                     <span>HTML</span>
+
                     <span>CSS</span>
+
                     <span>JavaScript</span>
+
                     <span>Node.js</span>
+
                     <span>Express</span>
 
                 </div>
 
             </div>
 
+
+            <!-- PROJECT 03 -->
 
             <div class="glass project-card">
 
@@ -1087,14 +1317,19 @@
                 <div class="tech">
 
                     <span>MQL4</span>
+
                     <span>MT4</span>
+
                     <span>Technical Indicators</span>
+
                     <span>Candlestick Patterns</span>
 
                 </div>
 
             </div>
 
+
+            <!-- PROJECT 04 -->
 
             <div class="glass project-card">
 
@@ -1115,10 +1350,15 @@
                 <div class="tech">
 
                     <span>React</span>
+
                     <span>Node.js</span>
+
                     <span>Express</span>
+
                     <span>MongoDB</span>
+
                     <span>JWT</span>
+
                     <span>Cloudinary</span>
 
                 </div>
@@ -1133,7 +1373,9 @@
 </section>
 
 
-<!-- EDUCATION -->
+<!-- =========================
+     EDUCATION
+========================== -->
 
 <section id="education">
 
@@ -1201,7 +1443,9 @@
 </section>
 
 
-<!-- TOOLS -->
+<!-- =========================
+     TOOLS
+========================== -->
 
 <section>
 
@@ -1221,36 +1465,52 @@
 
             <div class="glass tool">
 
-                <h3>VS Code</h3>
+                <h3>
+                    VS Code
+                </h3>
 
-                <p>Code Editor</p>
-
-            </div>
-
-
-            <div class="glass tool">
-
-                <h3>GitHub</h3>
-
-                <p>Version Control</p>
+                <p>
+                    Code Editor
+                </p>
 
             </div>
 
 
             <div class="glass tool">
 
-                <h3>Dev-C++</h3>
+                <h3>
+                    GitHub
+                </h3>
 
-                <p>C++ Development</p>
+                <p>
+                    Version Control
+                </p>
 
             </div>
 
 
             <div class="glass tool">
 
-                <h3>MetaMask</h3>
+                <h3>
+                    Dev-C++
+                </h3>
 
-                <p>Blockchain Wallet</p>
+                <p>
+                    C++ Development
+                </p>
+
+            </div>
+
+
+            <div class="glass tool">
+
+                <h3>
+                    MetaMask
+                </h3>
+
+                <p>
+                    Blockchain Wallet
+                </p>
 
             </div>
 
@@ -1286,7 +1546,7 @@
         <div class="certificate-grid">
 
 
-            <!-- Certificate 1 -->
+            <!-- CERTIFICATE 1 -->
 
             <div class="glass certificate-card">
 
@@ -1313,7 +1573,7 @@
             </div>
 
 
-            <!-- Certificate 2 -->
+            <!-- CERTIFICATE 2 -->
 
             <div class="glass certificate-card">
 
@@ -1326,7 +1586,7 @@
                 </h3>
 
                 <p>
-                    CodeSignal
+                    Certificate
                 </p>
 
                 <button
@@ -1340,12 +1600,12 @@
             </div>
 
 
-            <!-- Certificate 3 -->
+            <!-- CERTIFICATE 3 -->
 
             <div class="glass certificate-card">
 
                 <div class="certificate-icon">
-                    🌐
+                    🔌
                 </div>
 
                 <h3>
@@ -1353,7 +1613,7 @@
                 </h3>
 
                 <p>
-                    CodeSignal
+                    Certificate
                 </p>
 
                 <button
@@ -1367,12 +1627,12 @@
             </div>
 
 
-            <!-- Certificate 4 -->
+            <!-- CERTIFICATE 4 -->
 
             <div class="glass certificate-card">
 
                 <div class="certificate-icon">
-                    ⚙️
+                    🌐
                 </div>
 
                 <h3>
@@ -1380,7 +1640,7 @@
                 </h3>
 
                 <p>
-                    CodeSignal
+                    Certificate
                 </p>
 
                 <button
@@ -1394,12 +1654,12 @@
             </div>
 
 
-            <!-- Certificate 5 -->
+            <!-- CERTIFICATE 5 -->
 
             <div class="glass certificate-card">
 
                 <div class="certificate-icon">
-                    🟨
+                    JS
                 </div>
 
                 <h3>
@@ -1407,7 +1667,7 @@
                 </h3>
 
                 <p>
-                    CodeSignal
+                    Certificate
                 </p>
 
                 <button
@@ -1421,12 +1681,12 @@
             </div>
 
 
-            <!-- Certificate 6 -->
+            <!-- CERTIFICATE 6 -->
 
             <div class="glass certificate-card">
 
                 <div class="certificate-icon">
-                    🎨
+                    CSS
                 </div>
 
                 <h3>
@@ -1434,7 +1694,7 @@
                 </h3>
 
                 <p>
-                    CodeSignal
+                    Certificate
                 </p>
 
                 <button
@@ -1448,7 +1708,7 @@
             </div>
 
 
-            <!-- Certificate 7 -->
+            <!-- CERTIFICATE 7 -->
 
             <div class="glass certificate-card">
 
@@ -1461,7 +1721,7 @@
                 </h3>
 
                 <p>
-                    CodeSignal
+                    Certificate
                 </p>
 
                 <button
@@ -1482,7 +1742,9 @@
 </section>
 
 
-<!-- CERTIFICATE POPUP -->
+<!-- =========================
+     CERTIFICATE IMAGE POPUP
+========================== -->
 
 <div
     class="certificate-modal"
@@ -1511,7 +1773,9 @@
 </div>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================== -->
 
 <section id="contact">
 
@@ -1531,33 +1795,67 @@
 
             <div class="contact-links">
 
+
+                <!-- EMAIL -->
+
                 <a
-                    href="mailto:your-email@example.com"
+                    href="mailto:your@email.com"
                     class="btn btn-primary">
 
-                    Email Me
+                    📧 Email Me
 
                 </a>
 
+
+                <!-- CALL -->
+
+                <a
+                    href="tel:+919876543210"
+                    class="btn">
+
+                    📞 Call Me
+
+                </a>
+
+
+                <!-- WHATSAPP -->
+
+                <a
+                    href="https://wa.me/919876543210"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+
+                    💬 Message Me
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a
+                    href="https://www.linkedin.com/in/yourname"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+
+                    💼 LinkedIn
+
+                </a>
+
+
+                <!-- GITHUB -->
 
                 <a
                     href="https://github.com/121Sakshi"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn">
 
-                    GitHub
+                    🐙 GitHub
 
                 </a>
 
-
-                <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    class="btn">
-
-                    LinkedIn
-
-                </a>
 
             </div>
 
@@ -1568,7 +1866,9 @@
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
@@ -1577,9 +1877,16 @@
 </footer>
 
 
-<!-- JAVASCRIPT -->
+<!-- =========================
+     JAVASCRIPT
+========================== -->
 
 <script>
+
+
+    /* =========================
+       OPEN CERTIFICATE
+    ========================== */
 
     function showCertificate(imagePath) {
 
@@ -1597,25 +1904,40 @@
     }
 
 
+    /* =========================
+       CLOSE CERTIFICATE
+    ========================== */
+
     function closeCertificate(event) {
 
         const modal =
             document.getElementById("certificateModal");
 
+
         if (
             event &&
             event.target !== modal
         ) {
+
             return;
+
         }
+
 
         modal.classList.remove("active");
 
-        document.getElementById("certificateImage").src = "";
+        document.getElementById(
+            "certificateImage"
+        ).src = "";
 
         document.body.style.overflow = "auto";
+
     }
 
+
+    /* =========================
+       ESC KEY CLOSE
+    ========================== */
 
     document.addEventListener(
         "keydown",
@@ -1633,10 +1955,12 @@
                 ).src = "";
 
                 document.body.style.overflow = "auto";
+
             }
 
         }
     );
+
 
 </script>
 
